@@ -40,4 +40,7 @@ function onGalleryItemClick(event) {
       }
     });
   }
+  // if (!instance.visible()) {
+  //   document.removeEventListener("keydown");
+  // }
 }

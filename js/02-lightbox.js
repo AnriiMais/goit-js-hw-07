@@ -6,15 +6,16 @@ import { galleryItems } from "./gallery-items.js";
 const galleryListNode = document.querySelector(".gallery");
 const makeGalleryItemMarkup = ({ preview, original, description }) => {
   return `
+    <li>
     <a class="gallery__item" href="${original}">
        <img
          class="gallery__image"
          src="${preview}"
          alt="${description}"
        />
-     </a>`;
+     </a>
+     </li>`;
 };
-// console.log("makeGalleryMarkup", makeGalleryItemMarkup);
 
 const markupGallery = galleryItems.map(makeGalleryItemMarkup).join("");
 console.log("markupGallery", markupGallery);
